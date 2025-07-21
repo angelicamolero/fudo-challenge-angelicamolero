@@ -33,4 +33,4 @@ docker run -p 8080:80 fudo-challenge-angelicamolero
 La app estará disponible en: http://localhost:8080
 
 ### Deploy
-El proyecto está publicado en GitHub Pages
+El proyecto está publicado en GitHub Pages https://angelicamolero.github.io/fudo-challenge-angelicamolero/#/
