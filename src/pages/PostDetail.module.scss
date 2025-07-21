@@ -1,0 +1,132 @@
+.ProductDetail{
+    background-color: #a52a2a33;
+    padding-top: 3rem;
+    min-height: 100vh; 
+    padding-bottom: 2rem;
+
+    @media (max-width: 768px){
+        background-color: unset;
+        margin-bottom: 11rem;
+        margin-top: 1.5rem;
+    }
+
+    .PostDetailContainer{
+        display: flex;
+        width: 90%;
+        max-width: 1024px;
+        margin: auto;
+        flex-direction: column;
+        align-items:  start;
+        padding: 3rem;
+        border-radius: 12px;
+        background-color: #fff;
+        opacity: 1;
+        z-index: 1;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        gap: 1rem;
+
+        @media (max-width: 768px){
+            box-shadow: none;
+            padding: 1rem;
+        }
+
+        .PostDetailContainer__header{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+
+            @media (max-width: 768px){
+                align-items: self-start;
+            }
+
+            .PostDetail__row__left{
+                width: 100%;
+                display: flex;
+                justify-content: left;
+                gap: 1rem;
+
+                @media (max-width: 768px){
+                    gap: 0.5rem;
+                }
+
+                .avatar{
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .PostDetail__username{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    font-size: 16px;
+
+                    @media (max-width: 768px){
+                        font-size: 14px;
+                    }
+                }
+            }
+            .PostDetail__row__right{
+                width: 100%;
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                gap: 1rem;
+
+                 @media (max-width: 768px){
+                    align-items: flex-start;
+                    gap: 0.3rem;
+                 }
+
+                .PostDetail__createdAt{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+
+                    @media (max-width: 768px){
+                        font-size: 11px;
+                        margin: 0;
+                    }
+                }
+
+
+            }
+           
+        }
+
+        .PostDetailContainer__imageContainer{
+            width: 100%;
+            .PostDetailContainer__image {
+                width: 100%;
+                height: 450px; 
+                object-fit: cover;
+                border-radius: 1rem;
+                display: block;
+            }
+        }
+
+        .PostDetailContainer__title{
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .PostDetailContainer__content{
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.GoBack{
+    position: absolute;
+    text-decoration: none;
+    color: #000;
+    padding: 1rem 1rem 0;
+    padding: 1.5rem 2rem 0;
+    font-family: 'Poppins', sans-serif;
+}

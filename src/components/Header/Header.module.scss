@@ -1,0 +1,98 @@
+.HeaderContainer{
+    display: flex;
+    padding: 1rem 2rem;
+
+    @media (max-width: 768px){
+        padding: 1rem;
+    }
+    .HeaderContainer__logoContainer{
+        width: 20%;
+        .HeaderContainer__logo{
+            display: flex;
+            align-items: center;
+            height: 100%;
+             font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 2.5rem;
+            color: #a52a2a;
+            text-decoration: none;
+
+            @media (max-width: 768px){
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+
+    .HeaderContainer__searchbar{
+        display: flex;
+        align-items: center;
+        width: 75%;
+
+        @media (max-width: 768px){
+            justify-content: center;
+        }
+
+        .HeaderContainer__searchbar__input{
+            padding: 0px 0px 0px 16px;
+            display: flex;
+            background-color: rgb(241, 241, 241);
+            height: 48px;
+            border: none;
+            border-radius: 12px;
+            width: 100%;
+
+            @media (max-width: 768px){
+                padding: 0px 0px 0px 14px;
+                height: 33px;
+                width:75%;
+            }
+        }
+    }
+
+    .HeaderContainer__userContainer{
+        width: 15%;
+        display: flex;
+        justify-content: end;
+        .HeaderContainer__avatar{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+
+                @media (max-width: 768px){
+                    width: 34px;
+                    height: 38px;
+                }
+            }
+
+        .HeaderContainer__dropdown__button{
+            background: transparent;
+            border: none;
+            position: relative;
+            cursor: pointer;
+
+            .arrowIcon{
+                margin-left: 4px;
+                vertical-align: middle;
+                transition: transform 0.3s ease;
+
+                &.open {
+                    transform: rotate(180deg);
+                }
+            }
+
+            .Dropdown{
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background-color: #fff;
+                padding: 0.5rem 1rem;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                z-index: 10;
+                width: 100px;
+            }
+        }
+        } 
+}
