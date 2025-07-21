@@ -1,12 +1,36 @@
-# React + Vite
+## Fudo Challenge – Angelica Molero
+Este proyecto es una red social acotada desarrollada en React, como parte de un challenge técnico para la posición de Frontend Semi Senior Developer.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Features
+- Listado de posts
 
-Currently, two official plugins are available:
+- Pantalla de detalle de post con comentarios
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Crear, eliminar y editar posts y comentarios
 
-## Expanding the ESLint configuration
+- UI custom con SASS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Test unitarios con Jest
+
+### Estructura del proyecto
+src/
+├── components/        # Componentes (Post, Comment, Forms, etc)
+├── hooks/             # Hooks personalizados
+├── services/          # Config de axios
+├── types/             # Tipados globales
+├── pages/             # Home y detalle de post
+├── utils/             # funciones re-utilizables
+
+### Build de Producción con Docker + Nginx
+npm run build
+
+### Crear la imagen Docker
+docker build -t fudo-challenge-angelicamolero .
+
+### Ejecutar el contenedor
+docker run -p 8080:80 fudo-challenge-angelicamolero 
+
+La app estará disponible en: http://localhost:8080
+
+### Deploy
+El proyecto está publicado en GitHub Pages
