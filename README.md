@@ -1,5 +1,5 @@
 ## Fudo Challenge – Angelica Molero
-Este proyecto es una red social acotada desarrollada en React, como parte de un challenge técnico para la posición de Frontend Semi Senior Developer.
+Este proyecto es una red social que llame Postea acotada desarrollada en React, como parte de un challenge técnico para la posición de Frontend Semi Senior Developer.
 
 ### Features
 - Listado de posts
@@ -10,7 +10,7 @@ Este proyecto es una red social acotada desarrollada en React, como parte de un 
 
 - UI custom con SASS
 
-- Test unitarios con Jest
+- Test unitarios con Jest para las funciones getComments y createCommments, asi como un test al component del CommentForm 
 
 ### Estructura del proyecto
 ```
