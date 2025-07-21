@@ -13,6 +13,7 @@ Este proyecto es una red social acotada desarrollada en React, como parte de un 
 - Test unitarios con Jest
 
 ### Estructura del proyecto
+```
 src/
 ├── components/        # Componentes (Post, Comment, Forms, etc)
 ├── hooks/             # Hooks personalizados
@@ -20,6 +21,7 @@ src/
 ├── types/             # Tipados globales
 ├── pages/             # Home y detalle de post
 ├── utils/             # funciones re-utilizables
+```
 
 ### Build de Producción con Docker + Nginx
 npm run build
